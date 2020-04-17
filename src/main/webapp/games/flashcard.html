@@ -1,0 +1,43 @@
+
+<html>
+    <head>
+        <script type="text/javascript" src="flashcard.js"></script>
+        <link rel="stylesheet" href="flashcard.css">
+        <title>WordZ Flashcards</title>
+
+    </head>
+    <body>
+        <div id = "root">
+            <section id="head">    
+                <h1>
+                    GRE Word List Flashcard by Wordz
+                </h1>
+            </section>
+            <section id="body">
+                <form>
+                    <input id="textarea" type="text" name="display" size="80" readonly=true>
+                </form>
+
+                <form>
+                    <input class = "btn" type="button" value="Flip" onclick="Flip()">
+                    <input class = "btn" type="button" value="New Word" onClick="NewWord()">
+                </form>
+
+                <script type="text/javascript">
+                    NewWord()
+                </script>
+            </section>
+
+            <section id="footer">
+                <h2>
+                    Instructions
+                </h2>
+                Use the <b>Flip</b> button to alternate between the word and its definition.
+                <p>
+                    Use the <b>New Word</b> button to randomly select a new word.
+                <p>
+                    How many definitions in a row can you guess correctly?
+            </section>
+        </div>
+    </body>
+</html>

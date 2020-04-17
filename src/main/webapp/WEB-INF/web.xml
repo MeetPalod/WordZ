@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>synmServlet</servlet-name>
+        <servlet-class>com.dict.servlets.synmServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>synmServlet</servlet-name>
+        <url-pattern>/synmServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>discServlet</servlet-name>
+        <servlet-class>com.dict.servlets.discServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>discServlet</servlet-name>
+        <url-pattern>/discServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            100
+        </session-timeout>
+    </session-config>
+</web-app>
